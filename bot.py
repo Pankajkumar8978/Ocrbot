@@ -3,8 +3,8 @@ from telebot import types
 import requests
 
 # Replace these values with your actual values
-API_KEY = "you api key from ocr-space"
-BOT_TOKEN = "YOUR TELEGRAM BOT TKN"
+API_KEY = "K87078384288957"
+BOT_TOKEN = "6371685445:AAHCmB-j4C6YHfP0X17q9u2SdoD3Kietsac"
 OWNER ="beingpankajkr"
 
 bot = telebot.TeleBot(BOT_TOKEN)
