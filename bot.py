@@ -3,8 +3,8 @@ from telebot import types
 import requests
 
 # Replace these values with your actual values
-API_KEY = "K87078384288957"
-BOT_TOKEN = "6371685445:AAHCmB-j4C6YHfP0X17q9u2SdoD3Kietsac"
+API_KEY = "you api key from ocr-space"
+BOT_TOKEN = "YOUR TELEGRAM BOT TKN"
 OWNER ="beingpankajkr"
 
 bot = telebot.TeleBot(BOT_TOKEN)
@@ -35,7 +35,7 @@ def send_help(message):
     first = message.chat.first_name
     keyboard = types.InlineKeyboardMarkup()
     keyboard.add(types.InlineKeyboardButton("Owner 👨‍💻", url=f"https://t.me/{OWNER}"))
-    keyboard.add(types.InlineKeyboardButton("Tutorial 📺", url="https://youtu.be/7yqjm-DCaXE"))
+    keyboard.add(types.InlineKeyboardButton("Tutorial 📺", url="https://youtu.be/@sitesadda"))
     bot.reply_to(
         message,
         f'Hi! {first}\n\nFollow these steps...\n➥ First send me a clear image\n➥ Select the language to extract text\n➥ Extracted text will be sent as a message!',
