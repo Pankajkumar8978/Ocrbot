@@ -1,12 +1,12 @@
 import telebot
 from telebot import types
 import requests
+import os
 
-# Replace these values with your actual values
-API_KEY = "K87078384288957"
-BOT_TOKEN = "6371685445:AAHCmB-j4C6YHfP0X17q9u2SdoD3Kietsac"
-OWNER ="beingpankajkr"
-
+# Load from environment variables
+API_KEY = os.getenv("API_KEY")
+BOT_TOKEN = os.getenv("BOT_TOKEN")
+OWNER = os.getenv("OWNER")
 bot = telebot.TeleBot(BOT_TOKEN)
 user_data = {}
 
